@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 2</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link rel="stylesheet" type="text/css" href="stile.css">
+</head>
+<body>
+<!--<p id="ejercicioArray"></p>-->
+<!--<p id="ejercicio"></p>
+<p id="apartar"></p>
+<p id="reversa"></p>-->
+<!--<script type="text/javascript" src="sena.js"></script>-->
+
+						<!-- ESTO ES EL BODY O CUERPO -->
+<!--<div id="app">
+  {{ message }}
+  <h1>
+  	{{show}}
+  </h1>
+  <p>
+  	{{persona.nombre}}
+  	{{persona.apellido}}
+  	{{persona.fechaNacimiento.anios}}
+  </p>
+</div>
+<br>-->
+<!--<div id="app-2">
+  <span v-bind:title="message">
+    muchachos de adsi tarde o temprado pasaremos todo
+  </span>
+</div>
+<br>
+<div id="app-3">
+  <span v-if="seen">nose que sera esto</span>
+</div>-->
+<!--<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+<div id="app-5">
+  <p>{{ message }}</p>
+  <button v-on:click="ReversarMensaje">reversar mensaje de texto</button>
+</div>
+<br>
+<div id="app-4s">
+  <ol>
+    <li v-for="tod in todoss">
+      {{ tod.text }}
+    </li>   
+  </ol>
+ <button v-on:click="ReversarMensaje">reversar mensaje de texto</button>
+</div>-->
+<!--<div id="app-6">
+  <p>{{ message }}</p>
+  <input v-model="message">
+</div>-->
+
+<div id="app-8">
+	<ol>
+    <li v-for="letra in letras">
+      {{ letra.text }}
+    </li>   
+  </ol>
+	<p>{{ mensajes }}</p>
+  <input v-model="newval">
+  <button v-on:click="agregar">agregar mensaje de texto</button>
+</div>
+
+					<!--AQUI ENTRA EL CODIGO EN SCRIPT-->
+
+<script type="text/javascript">
+/*	var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hola ADSI',
+    show:"nueva variable",
+  persona:{
+    	nombre:"juan",
+    	apellido:"loaiza",
+    fechaNacimiento:{
+    	dia: 2,
+    	mes: "mayo",
+    	anios: 2001,
+    }
+  }}
+})
+/*var app3 = new Vue({
+  el: '#app-3',
+  data: {
+    seen: true
+  }
+})*/
+/*var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: 'Correr' },
+      { text: 'Dormir' },
+      { text: 'Comer' }
+    ]
+  }
+})
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'parangaticurimicuaro'
+  },
+  methods: {
+    ReversarMensaje: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+var app4s = new Vue({
+  el: '#app-4s',
+  data: {
+    todoss: [
+      { text: 'Correr' },
+      { text: 'Dormir' },
+      { text: 'Comer' }
+    ]
+  },
+  methods: {
+    ReversarMensaje: function agregartarea() {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})*/
+/*var app6 = new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Hello Vue!'
+  }
+})*/
+
+var app8=new Vue({
+	el:'#app-8',
+	data:{
+		newval:'',
+	letras: [
+      { text: 'Correr' },
+      { text: 'Dormir' },
+      { text: 'Comer' }
+    ],
+		mensajes:''
+	},
+	methods:{
+	agregar: function agregartexto()
+	{
+	this.letras.push({text:this.newval})
+	}
+}
+})
+</script>
+						<!--SIGUE EL CUERPO O BODY-->
+
+</body>
+</html>
